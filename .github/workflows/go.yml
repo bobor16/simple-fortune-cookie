@@ -2,9 +2,9 @@ name: Go
 
 on:
   push:
-    branches: [ main ]
+    branches: [ bobor16-patch-1 ]
   pull_request:
-    branches: [ main ]
+    branches: [ automation ]
 
 jobs:
 
