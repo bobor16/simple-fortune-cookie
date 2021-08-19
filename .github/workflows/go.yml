@@ -2,9 +2,8 @@ name: Go
 
 on:
   push:
-    branches: [ bobor16-patch-1 ]
-  pull_request:
-    branches: [ automation ]
+    branches: [ master ]
+
 
 jobs:
 
@@ -19,7 +18,7 @@ jobs:
         go-version: 1.17
 
     - name: Build
-      run: go build -v ./backend
+      run: go build -v 
 
     - name: Test
-      run: go test -v ./frontend
+      run: go test -v 
