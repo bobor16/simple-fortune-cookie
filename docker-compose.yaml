@@ -1,14 +1,24 @@
 version: '3'
 
 services:
+  
+  database:
+    image: redis:latest
 
   backend:
+    build: backend/.
     image: backend:latest
+    depends_on:
+      - database
+    environment:
+      REDIS_DNS: "database"
 
   frontend:
+    build: frontend/.
     image: frontend:latest
     ports: 
       - 8080:8080
     environment:
       BACKEND_DNS: "backend"
       BACKEND_PORT: "9000"
+    
