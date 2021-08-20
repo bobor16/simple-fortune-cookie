@@ -25,10 +25,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: [Build, Test]
     steps:
-      - name: Download artifact clone-down
+      - name: Download artifact code
         uses: actions/download-artifact@v2
         with:
-          name: clone-down
+          name: code
           path: ./frontend
       - name: Login to DockerHub
         uses: docker/login-action@v1
@@ -46,10 +46,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: [Build, Test]
     steps:
-      - name: Download artifact clone-down
+      - name: Download artifact code
         uses: actions/download-artifact@v2
         with:
-          name: clone-down
+          name: code
           path: ./backend
       - name: Login to DockerHub
         uses: docker/login-action@v1
