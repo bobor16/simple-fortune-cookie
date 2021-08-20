@@ -3,14 +3,16 @@ name: Go
 on:
   push:
   pull_request:
+
 env:
   docker_username: ${{ secrets.DOCKER_USERNAME }}
   docker_password: ${{ secrets.DOCKER_PASSWORD }}
+
 jobs:
   Clone-down:
     name: Clone down repo
     runs-on: ubuntu-latest
-    container: gradle:6-jdk11
+    container: golang:latest
     steps:
       - uses: actions/checkout@v2
       - name: Upload Repo
@@ -27,7 +29,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: clone-down
-          path: .
+          path: ./frontend
       - name: Login to DockerHub
         uses: docker/login-action@v1
         with:
@@ -48,7 +50,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: clone-down
-          path: .
+          path: ./backend
       - name: Login to DockerHub
         uses: docker/login-action@v1
         with:
