@@ -4,9 +4,6 @@ on:
   push:
   pull_request:
 
-env:
-  docker_username: ${{ secrets.DOCKER_USERNAME }}
-  docker_password: ${{ secrets.DOCKER_PASSWORD }}
 jobs:
   Clone-down:
     name: Clone down repo
@@ -20,20 +17,18 @@ jobs:
           name: code
           path: ./frontend
 
-  push_to_registry:
+  build-container:
+    name: Build Docker container image
     runs-on: ubuntu-latest
     needs: [Build, Test]
     steps:
-      - name: Download code
-        uses: actions/download-artifact@v1
+      - name: Publish to Docker hub
+        uses: docker/build-push-action@v1
         with:
-          name: code
-          path: ./frontend
-      - name: build docker
-        run: chmod +x ci/build-docker.sh && export GIT_COMMIT="GA-$GITHUB_SHA" && ci/build-docker.sh
-      - name: push docker
-        run: chmod +x ci/push-docker.sh && export GIT_COMMIT="GA-$GITHUB_SHA" && ci/push-docker.sh
-
+          docker_username: ${{ secrets.DOCKER_USERNAME }}
+          docker_password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: bobor16/fortunecookie
+          tags: latest, ${{ github.run_number }}
   Test:
     runs-on: ubuntu-latest
     needs: Clone-down
