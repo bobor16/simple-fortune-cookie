@@ -3,7 +3,9 @@ name: Go
 on:
   push:
   pull_request:
-
+env:
+  docker_username: ${{ secrets.DOCKER_USERNAME }}
+  docker_password: ${{ secrets.DOCKER_PASSWORD }}
 jobs:
   Clone-down:
     name: Clone down repo
@@ -17,18 +19,47 @@ jobs:
           name: code
           path: ./frontend
 
-  build-container:
-    name: Build Docker container image
+  DockerImage-frontend:
     runs-on: ubuntu-latest
-    needs: [Build, Test]
+    needs: Clone-down
     steps:
-      - name: Publish to Docker hub
-        uses: docker/build-push-action@v1
+      - name: Download artifact clone-down
+        uses: actions/download-artifact@v2
         with:
-          docker_username: ${{ secrets.DOCKER_USERNAME }}
-          docker_password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: bobor16/fortunecookie
-          tags: latest, ${{ github.run_number }}
+          name: clone-down
+          path: .
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ env.docker_username }}
+          password: ${{ env.docker_password }}
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          context: ./frontend
+          tags: ${{ env.docker_username }}/simple-fortune-cookie-frontend:${{ github.sha }}
+
+  DockerImage-backend:
+    runs-on: ubuntu-latest
+    needs: Clone-down
+    steps:
+      - name: Download artifact clone-down
+        uses: actions/download-artifact@v2
+        with:
+          name: clone-down
+          path: .
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ env.docker_username }}
+          password: ${{ env.docker_password }}
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          context: ./backend
+          tags: ${{ env.docker_username }}/simple-fortune-cookie-backend:${{ github.sha }}
   Test:
     runs-on: ubuntu-latest
     needs: Clone-down
