@@ -119,7 +119,7 @@ jobs:
           path: .
       - uses: actions/checkout@v2
       - name: Test Frontend Script
-        run: cd ./ci && chmod backend-test.sh && ./backend-test.sh
+        run: cd ./ci && chmod +x backend-test.sh && ./backend-test.sh
 
   Test-runner:
     runs-on: self-hosted
