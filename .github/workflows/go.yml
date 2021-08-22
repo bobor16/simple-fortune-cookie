@@ -74,7 +74,9 @@ jobs:
           name: code
           path: ./frontend && ./backend
       - name: Test Frontend
-        run: bash ./scripts/test-frontend.sh
+        run: |
+        cd ..
+        bash ./scripts/test-frontend.sh
 
   Build:
     runs-on: ubuntu-latest
