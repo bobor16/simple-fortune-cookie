@@ -98,11 +98,6 @@ jobs:
     needs: [Build, DockerImage-frontend]
     container: golang:latest
     steps:
-      - name: Download code
-        uses: actions/download-artifact@v2
-        with:
-          name: code
-          path: .
       - uses: actions/checkout@v2
       - name: run test
         run: bash scripts/test-frontend.sh
@@ -112,14 +107,10 @@ jobs:
     needs: [Build, DockerImage-backend]
     container: golang:latest
     steps:
-      - name: Download code
-        uses: actions/download-artifact@v2
-        with:
-          name: code
-          path: .
       - uses: actions/checkout@v2
       - name: run test
         run: bash scripts/test-backend.sh
+        
   Test-runner:
     runs-on: self-hosted
     needs: Clone-down
