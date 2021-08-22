@@ -20,7 +20,7 @@ jobs:
         with:
           name: code
           path: ./frontend
- Test-frontend:
+  Test-frontend:
     runs-on: ubuntu-latest
     container: gradle:6-jdk11
     steps:
@@ -28,7 +28,6 @@ jobs:
         run: |
           chmod +x ${GITHUB_WORKSPACE}/scripts/test-frontend.sh
           ${GITHUB_WORKSPACE}/scripts/test-frontend.sh
-
   DockerImage-frontend:
     runs-on: ubuntu-latest
     needs: [Build, Tests]
@@ -81,6 +80,7 @@ jobs:
         with:
           name: code
           path: ./frontend && ./backend
+
   Build:
     runs-on: ubuntu-latest
     needs: Clone-down
