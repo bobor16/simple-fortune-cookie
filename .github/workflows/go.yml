@@ -85,7 +85,7 @@ jobs:
   Test:
     runs-on: self-hosted
     needs: Clone-down
-    container: gradle:6-jdk11
+    container: golang:latest
     steps:
       - name: Download code
         uses: actions/download-artifact@v2
