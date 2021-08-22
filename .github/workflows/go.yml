@@ -75,16 +75,16 @@ jobs:
           path: ./frontend && ./backend
       - name: Build frontend
         run: |
-          cd ${GITHUB_WORKSPACE}/frontend
+          cd ./frontend
           go build .
       - name: Run frontend
         run: |
-          cd ${GITHUB_WORKSPACE}/frontend
+          cd ./frontend
           go run frontend &
       - name: Test Frontend
         run: |
-          chmod +x ${GITHUB_WORKSPACE}/scripts/test_frontend.sh
-          ${GITHUB_WORKSPACE}/scripts/test_frontend.sh
+          chmod +x ./frontend/scripts/test_frontend.sh
+          ./frontend/scripts/test_frontend.sh
 
   Build:
     runs-on: ubuntu-latest
