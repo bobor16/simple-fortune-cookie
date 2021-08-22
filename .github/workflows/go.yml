@@ -76,8 +76,7 @@ jobs:
 
       - name: Test Frontend
         run: |
-          chmod +x ${GITHUB_WORKSPACE}/scripts/test_frontend.sh
-          ${GITHUB_WORKSPACE}/scripts/test_frontend.sh
+          ./scripts/test_frontend.sh
 
   Build:
     runs-on: ubuntu-latest
