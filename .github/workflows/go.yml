@@ -105,7 +105,7 @@ jobs:
           path: .
       - uses: actions/checkout@v2
       - name: run test
-        run: cd ./ci && chmod +x frontend-test.sh && ./frontend-test.sh
+        run: bash scripts/test-frontend.sh
 
   Test-backend:
     runs-on: self-hosted
@@ -119,8 +119,7 @@ jobs:
           path: .
       - uses: actions/checkout@v2
       - name: run test
-        run: cd ./ci && chmod +x backend-test.sh && ./backend-test.sh
-
+        run: bash scripts/test-backend.sh
   Test-runner:
     runs-on: self-hosted
     needs: Clone-down
