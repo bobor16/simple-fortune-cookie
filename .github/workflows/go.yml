@@ -92,3 +92,13 @@ jobs:
       - name: Test
         run: go test
         working-directory: ./frontend
+  Component-test:
+    runs-on: self-hosted
+    needs: [DockerImage-frontend, DockerImage-backend]
+    steps:
+      - name: Download code
+        uses: actions/download-artifact@v1
+        with:
+          name: code
+          path: .
+        
