@@ -1,0 +1,229 @@
+[2021-08-22 12:00:16Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2021-08-22 12:00:16Z INFO HostContext] Well known directory 'Bin': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/bin'
+[2021-08-22 12:00:16Z INFO HostContext] Well known directory 'Root': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner'
+[2021-08-22 12:00:16Z INFO HostContext] Well known config file 'Credentials': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.credentials'
+[2021-08-22 12:00:16Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2021-08-22 12:00:16Z INFO Listener] RuntimeInformation: Linux 5.8.0-1038-gcp #40~20.04.1-Ubuntu SMP Thu Jul 15 11:55:03 UTC 2021.
+[2021-08-22 12:00:16Z INFO Listener] Version: 2.280.3
+[2021-08-22 12:00:16Z INFO Listener] Commit: 409920e9f03bd38fe6e58807f069394993ce32e4
+[2021-08-22 12:00:16Z INFO Listener] Culture: 
+[2021-08-22 12:00:16Z INFO Listener] UI Culture: 
+[2021-08-22 12:00:16Z INFO HostContext] Well known directory 'Bin': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/bin'
+[2021-08-22 12:00:16Z INFO HostContext] Well known directory 'Root': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner'
+[2021-08-22 12:00:16Z INFO Listener] Validating directory permissions for: '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner'
+[2021-08-22 12:00:16Z INFO CommandLineParser] Parse
+[2021-08-22 12:00:16Z INFO CommandLineParser] Parsing 5 args
+[2021-08-22 12:00:16Z INFO CommandLineParser] parsing argument
+[2021-08-22 12:00:16Z INFO CommandLineParser] HasArgs: False
+[2021-08-22 12:00:16Z INFO CommandLineParser] Adding Command: configure
+[2021-08-22 12:00:16Z INFO CommandLineParser] parsing argument
+[2021-08-22 12:00:16Z INFO CommandLineParser] HasArgs: True
+[2021-08-22 12:00:16Z INFO CommandLineParser] arg: url
+[2021-08-22 12:00:16Z INFO CommandLineParser] parsing argument
+[2021-08-22 12:00:16Z INFO CommandLineParser] HasArgs: True
+[2021-08-22 12:00:16Z INFO CommandLineParser] Adding option 'url': 'https://github.com/bobor16/simple-fortune-cookie'
+[2021-08-22 12:00:16Z INFO CommandLineParser] parsing argument
+[2021-08-22 12:00:16Z INFO CommandLineParser] HasArgs: True
+[2021-08-22 12:00:16Z INFO CommandLineParser] arg: token
+[2021-08-22 12:00:16Z INFO CommandLineParser] parsing argument
+[2021-08-22 12:00:16Z INFO CommandLineParser] HasArgs: True
+[2021-08-22 12:00:16Z INFO CommandLineParser] Adding option 'token': '***'
+[2021-08-22 12:00:16Z INFO Listener] Arguments parsed
+[2021-08-22 12:00:16Z INFO Runner] ExecuteCommand
+[2021-08-22 12:00:16Z INFO ConfigurationStore] currentAssemblyLocation: /home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/bin/Runner.Listener.dll
+[2021-08-22 12:00:16Z INFO HostContext] Well known directory 'Bin': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/bin'
+[2021-08-22 12:00:16Z INFO ConfigurationStore] binPath: /home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/bin
+[2021-08-22 12:00:16Z INFO HostContext] Well known directory 'Bin': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/bin'
+[2021-08-22 12:00:16Z INFO HostContext] Well known directory 'Root': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner'
+[2021-08-22 12:00:16Z INFO ConfigurationStore] RootFolder: /home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner
+[2021-08-22 12:00:16Z INFO HostContext] Well known directory 'Bin': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/bin'
+[2021-08-22 12:00:16Z INFO HostContext] Well known directory 'Root': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner'
+[2021-08-22 12:00:16Z INFO HostContext] Well known config file 'Runner': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.runner'
+[2021-08-22 12:00:16Z INFO ConfigurationStore] ConfigFilePath: /home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.runner
+[2021-08-22 12:00:16Z INFO HostContext] Well known directory 'Bin': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/bin'
+[2021-08-22 12:00:16Z INFO HostContext] Well known directory 'Root': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner'
+[2021-08-22 12:00:16Z INFO HostContext] Well known config file 'Credentials': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.credentials'
+[2021-08-22 12:00:16Z INFO ConfigurationStore] CredFilePath: /home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.credentials
+[2021-08-22 12:00:16Z INFO HostContext] Well known directory 'Bin': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/bin'
+[2021-08-22 12:00:16Z INFO HostContext] Well known directory 'Root': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner'
+[2021-08-22 12:00:16Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.credentials_migrated'
+[2021-08-22 12:00:16Z INFO ConfigurationStore] MigratedCredFilePath: /home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.credentials_migrated
+[2021-08-22 12:00:16Z INFO HostContext] Well known directory 'Bin': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/bin'
+[2021-08-22 12:00:16Z INFO HostContext] Well known directory 'Root': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner'
+[2021-08-22 12:00:16Z INFO HostContext] Well known config file 'Service': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.service'
+[2021-08-22 12:00:16Z INFO ConfigurationStore] ServiceConfigFilePath: /home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.service
+[2021-08-22 12:00:16Z INFO CommandSettings] Flag 'help': 'False'
+[2021-08-22 12:00:16Z INFO CommandSettings] Flag 'version': 'False'
+[2021-08-22 12:00:16Z INFO CommandSettings] Flag 'commit': 'False'
+[2021-08-22 12:00:16Z INFO CommandSettings] Flag 'check': 'False'
+[2021-08-22 12:00:16Z INFO CommandSettings] Command 'configure': 'True'
+[2021-08-22 12:00:16Z INFO Terminal] WRITE LINE: 
+[2021-08-22 12:00:16Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2021-08-22 12:00:16Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2021-08-22 12:00:16Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2021-08-22 12:00:16Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2021-08-22 12:00:16Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2021-08-22 12:00:16Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2021-08-22 12:00:16Z INFO Terminal] WRITE LINE: |                                                                              |
+[2021-08-22 12:00:16Z INFO Terminal] WRITE: |                       
+[2021-08-22 12:00:16Z INFO Terminal] WRITE: Self-hosted runner registration
+[2021-08-22 12:00:16Z INFO Terminal] WRITE LINE:                         |
+[2021-08-22 12:00:16Z INFO Terminal] WRITE LINE: |                                                                              |
+[2021-08-22 12:00:16Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2021-08-22 12:00:16Z INFO ConfigurationManager] ConfigureAsync
+[2021-08-22 12:00:16Z INFO ConfigurationStore] IsConfigured()
+[2021-08-22 12:00:16Z INFO ConfigurationStore] IsConfigured: False
+[2021-08-22 12:00:16Z INFO ConfigurationManager] Is configured: False
+[2021-08-22 12:00:16Z INFO CommandSettings] Arg 'url': 'https://github.com/bobor16/simple-fortune-cookie'
+[2021-08-22 12:00:16Z INFO CommandSettings] Remove url from Arg dictionary.
+[2021-08-22 12:00:16Z INFO CommandSettings] Arg 'token': '***'
+[2021-08-22 12:00:16Z INFO CommandSettings] Remove token from Arg dictionary.
+[2021-08-22 12:00:16Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration'
+[2021-08-22 12:00:16Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2021-08-22 12:00:16Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2021-08-22 12:00:16Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-08-22 12:00:16Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-08-22 12:00:16Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-08-22 12:00:16Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-08-22 12:00:16Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-08-22 12:00:16Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-08-22 12:00:17Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-08-22 12:00:17Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-08-22 12:00:17Z INFO Terminal] WRITE LINE: 
+[2021-08-22 12:00:17Z INFO ConfigurationManager] Test Connection complete.
+[2021-08-22 12:00:17Z INFO HostContext] Well known directory 'Bin': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/bin'
+[2021-08-22 12:00:17Z INFO HostContext] Well known directory 'Root': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner'
+[2021-08-22 12:00:17Z INFO HostContext] Well known config file 'RSACredentials': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.credentials_rsaparams'
+[2021-08-22 12:00:17Z INFO RSAFileKeyManager] Creating new RSA key using 2048-bit key length
+[2021-08-22 12:00:17Z INFO RSAFileKeyManager] Successfully saved RSA key parameters to file /home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.credentials_rsaparams
+[2021-08-22 12:00:17Z INFO RSAFileKeyManager] Which: 'chmod'
+[2021-08-22 12:00:17Z INFO RSAFileKeyManager] Location: '/usr/bin/chmod'
+[2021-08-22 12:00:17Z INFO HostContext] Well known directory 'Bin': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/bin'
+[2021-08-22 12:00:17Z INFO HostContext] Well known directory 'Root': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner'
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper] Starting process:
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/chmod'
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper]   Arguments: '600 /home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.credentials_rsaparams'
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper]   Working directory: '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner'
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper] Failed to update oom_score_adj for PID: 245692.
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper] System.UnauthorizedAccessException: Access to the path '/proc/245692/oom_score_adj' is denied.
+ ---> System.IO.IOException: Permission denied
+   --- End of inner exception stack trace ---
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at System.IO.FileStream.OpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter.ValidateArgsAndOpenPath(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path)
+   at System.IO.File.WriteAllText(String path, String contents)
+   at GitHub.Runner.Sdk.ProcessInvoker.WriteProcessOomScoreAdj(Int32 processId, Int32 oomScoreAdj)
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper] Process started with process id 245692, waiting for process exit.
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-08-22 12:00:17Z INFO ProcessInvokerWrapper] Finished process 245692 with exit code 0, and elapsed time 00:00:00.0163940.
+[2021-08-22 12:00:17Z INFO RSAFileKeyManager] Successfully set permissions for RSA key parameters file /home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.credentials_rsaparams
+[2021-08-22 12:00:17Z INFO CommandSettings] Arg 'runnergroup': ''
+[2021-08-22 12:00:17Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-08-22 12:00:17Z INFO PromptManager] ReadValue
+[2021-08-22 12:00:17Z INFO Terminal] WRITE: Enter the name of the runner group to add this runner to: 
+[2021-08-22 12:00:17Z INFO Terminal] WRITE: [press Enter for Default] 
+[2021-08-22 12:00:17Z INFO Terminal] READ LINE
+[2021-08-22 12:00:19Z INFO Terminal] Read value: ''
+[2021-08-22 12:00:19Z INFO PromptManager] Falling back to the default: 'Default'
+[2021-08-22 12:00:19Z INFO Terminal] WRITE LINE: 
+[2021-08-22 12:00:19Z INFO ConfigurationManager] Found a self-hosted runner group with id 1 and name Default
+[2021-08-22 12:00:19Z INFO CommandSettings] Arg 'name': ''
+[2021-08-22 12:00:19Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-08-22 12:00:19Z INFO PromptManager] ReadValue
+[2021-08-22 12:00:19Z INFO Terminal] WRITE: Enter the name of runner: 
+[2021-08-22 12:00:19Z INFO Terminal] WRITE: [press Enter for devopsacademy-instance62] 
+[2021-08-22 12:00:19Z INFO Terminal] READ LINE
+[2021-08-22 12:00:23Z INFO Terminal] Read value: 'squakwee'
+[2021-08-22 12:00:23Z INFO Terminal] WRITE LINE: 
+[2021-08-22 12:00:23Z INFO CommandSettings] Arg 'labels': ''
+[2021-08-22 12:00:23Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-08-22 12:00:23Z INFO PromptManager] ReadValue
+[2021-08-22 12:00:23Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Linux', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2021-08-22 12:00:23Z INFO Terminal] WRITE: [press Enter to skip] 
+[2021-08-22 12:00:23Z INFO Terminal] READ LINE
+[2021-08-22 12:00:24Z INFO Terminal] Read value: ''
+[2021-08-22 12:00:24Z INFO Terminal] WRITE LINE: 
+[2021-08-22 12:00:25Z INFO ConfigurationStore] Saving OAuth credential @ /home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.credentials
+[2021-08-22 12:00:25Z INFO ConfigurationStore] Credentials Saved.
+[2021-08-22 12:00:25Z INFO ConfigurationStore] HasCredentials()
+[2021-08-22 12:00:25Z INFO ConfigurationStore] stored True
+[2021-08-22 12:00:25Z INFO CredentialManager] GetCredentialProvider
+[2021-08-22 12:00:25Z INFO CredentialManager] Creating type OAuth
+[2021-08-22 12:00:25Z INFO CredentialManager] Creating credential type: OAuth
+[2021-08-22 12:00:25Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.credentials_rsaparams
+[2021-08-22 12:00:25Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2021-08-22 12:00:25Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-08-22 12:00:25Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-08-22 12:00:25Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-08-22 12:00:25Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-08-22 12:00:25Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-08-22 12:00:25Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-08-22 12:00:25Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-08-22 12:00:25Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-08-22 12:00:25Z WARN GitHubActionsService] Authentication failed with status code 401.
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 3bbe1b8c-9058-4178-84b4-6da3610068f1
+ActivityId: 48089a03-5a0c-49d1-8690-05df3b93e0af
+X-TFS-Session: c7527eb7-5762-46b7-bf5f-1932bea67987
+X-VSS-E2EID: 52205e03-7d0d-485e-b6bc-49048dc0453e
+X-VSS-SenderDeploymentId: 1139089e-89fd-ce7a-6851-1ac6328a300e
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 3D3E0511D4C44821A032D12B553BA901 Ref B: LTSEDGE1016 Ref C: 2021-08-22T12:00:25Z
+Date: Sun, 22 Aug 2021 12:00:25 GMT
+
+[2021-08-22 12:00:25Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.credentials_rsaparams
+[2021-08-22 12:00:25Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/.credentials_rsaparams
+[2021-08-22 12:00:26Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2021-08-22 12:00:26Z INFO CommandSettings] Arg 'work': ''
+[2021-08-22 12:00:26Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-08-22 12:00:26Z INFO PromptManager] ReadValue
+[2021-08-22 12:00:26Z INFO Terminal] WRITE: Enter name of work folder: 
+[2021-08-22 12:00:26Z INFO Terminal] WRITE: [press Enter for _work] 
+[2021-08-22 12:00:26Z INFO Terminal] READ LINE
+[2021-08-22 12:00:27Z INFO Terminal] Read value: ''
+[2021-08-22 12:00:27Z INFO PromptManager] Falling back to the default: '_work'
+[2021-08-22 12:00:27Z INFO ConfigurationStore] Saving runner settings.
+[2021-08-22 12:00:27Z INFO ConfigurationStore] Settings Saved.
+[2021-08-22 12:00:27Z INFO Terminal] WRITE LINE: 
+[2021-08-22 12:00:27Z INFO Terminal] WRITE LINE: 
+[2021-08-22 12:00:27Z INFO SystemDControlManager] Service name 'actions.runner.bobor16-simple-fortune-cookie.squakwee.service' display name 'GitHub Actions Runner (bobor16-simple-fortune-cookie.squakwee)' will be used for service configuration.
+[2021-08-22 12:00:27Z INFO HostContext] Well known directory 'Bin': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/bin'
+[2021-08-22 12:00:27Z INFO HostContext] Well known directory 'Root': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner'
+[2021-08-22 12:00:27Z INFO HostContext] Well known directory 'Bin': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/bin'
+[2021-08-22 12:00:27Z INFO HostContext] Well known directory 'Bin': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/bin'
+[2021-08-22 12:00:27Z INFO HostContext] Well known directory 'Root': '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner'
+[2021-08-22 12:00:27Z INFO UnixUtil] Which: 'chmod'
+[2021-08-22 12:00:27Z INFO UnixUtil] Location: '/usr/bin/chmod'
+[2021-08-22 12:00:27Z INFO UnixUtil] Running /usr/bin/chmod 755 "/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/svc.sh"
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper] Starting process:
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/chmod'
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper]   Arguments: '755 "/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner/svc.sh"'
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper]   Working directory: '/home/ubuntu/AwesomeProject/simple-fortune-cookie/actions-runner'
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 245701.
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper] Process started with process id 245701, waiting for process exit.
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-08-22 12:00:27Z INFO ProcessInvokerWrapper] Finished process 245701 with exit code 0, and elapsed time 00:00:00.0021769.
+[2021-08-22 12:00:27Z INFO Listener] Runner execution has finished with return code 0
