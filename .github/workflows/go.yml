@@ -101,4 +101,6 @@ jobs:
         with:
           name: code
           path: .
+      - name: Execute component test
+        run: chmod +x ci/test.sh && GIT_COMMIT="GA-$GITHUB_SHA" && ci/test.sh
         
