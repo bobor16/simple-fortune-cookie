@@ -75,7 +75,6 @@ jobs:
           path: ./frontend && ./backend
   Test-frontend:
     runs-on: ubuntu-latest
-    needs: 
     steps:
       - uses: actions/checkout@v2
      
