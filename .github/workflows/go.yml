@@ -23,8 +23,11 @@ jobs:
   Test-frontend:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Test Frontend
-        run: bash scripts/test-frontend.sh
+        run: |
+        ls
+        bash scripts/test-frontend.sh
 
   DockerImage-frontend:
     runs-on: ubuntu-latest
