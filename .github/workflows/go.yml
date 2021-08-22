@@ -88,7 +88,7 @@ jobs:
     container: gradle:6-jdk11
     steps:
       - name: Download code
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v1
         with:
           name: code
           path: ci/test.sh
