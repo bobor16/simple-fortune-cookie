@@ -7,7 +7,7 @@ services:
 
   backend:
     build: backend/.
-    image: backend:latest
+    image: bobor16/simple-fortune-cookie-backend:c7d76f134cf9779e6f5a70732605b792535e269e
     depends_on:
       - database
     environment:
@@ -15,9 +15,11 @@ services:
 
   frontend:
     build: frontend/.
-    image: frontend:latest
+    image: bobor16/simple-fortune-cookie-frontend:b5b4ca5992f56ea1ad4236c71bb6153db33df052
     ports: 
       - 8080:8080
+    depends_on:
+      - backend
     environment:
       BACKEND_DNS: "backend"
       BACKEND_PORT: "9000"
