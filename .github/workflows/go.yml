@@ -79,7 +79,10 @@ jobs:
     container: gradle:6-jdk11
     steps:
       - name: Test Frontend
-        run: bash ./blob/testing/scripts/test-frontend.sh
+        run: |
+          chmod +x ${GITHUB_WORKSPACE}/scripts/test-frontend.sh
+          ${GITHUB_WORKSPACE}/scripts/test-frontend.sh
+
   Build:
     runs-on: ubuntu-latest
     needs: Clone-down
