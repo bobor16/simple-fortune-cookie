@@ -73,17 +73,9 @@ jobs:
         with:
           name: code
           path: ./frontend && ./backend
-      - name: Build frontend
-        run: |
-          cd ./frontend
-          go build .
-      - name: Run frontend
-        run: |
-          cd ./frontend
-          go run frontend &
+
       - name: Test Frontend
         run: |
-          chmod +x ./frontend/scripts/test_frontend.sh
           ./frontend/scripts/test_frontend.sh
 
   Build:
