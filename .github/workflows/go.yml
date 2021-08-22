@@ -65,7 +65,7 @@ jobs:
           tags: ${{ env.docker_username }}/simple-fortune-cookie-backend:${{ github.sha }}
   Tests:
     runs-on: ubuntu-latest
-    needs: Clone-down
+    needs: [Clone-down, Build]
     container: gradle:6-jdk11
     steps:
       - name: Download code
@@ -76,7 +76,8 @@ jobs:
 
       - name: Test Frontend
         run: |
-          ./frontend/scripts/test_frontend.sh
+          chmod +x ${GITHUB_WORKSPACE}/scripts/test_frontend.sh
+          ${GITHUB_WORKSPACE}/scripts/test_frontend.sh
 
   Build:
     runs-on: ubuntu-latest
