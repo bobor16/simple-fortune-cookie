@@ -75,11 +75,11 @@ jobs:
           path: ./frontend && ./backend
       - name: Build frontend
         run: |
-          cd ${GITHUB_WORKSPACE}/src/frontend
+          cd ${GITHUB_WORKSPACE}/frontend
           go build .
       - name: Run frontend
         run: |
-          cd ${GITHUB_WORKSPACE}/src/frontend
+          cd ${GITHUB_WORKSPACE}/frontend
           go run frontend &
       - name: Test Frontend
         run: |
