@@ -15,7 +15,7 @@ spec:
         app: backend-deployment
     spec:
       containers:
-      - image: bobor16/simple-fortune-cookie-backend:c7d76f134cf9779e6f5a70732605b792535e269e
+      - image: bobor16/simple-fortune-cookie-backend:latest
         name: simple-fortune-cookie-backend
         imagePullPolicy: Always
         resources: {}
