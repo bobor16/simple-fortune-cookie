@@ -98,6 +98,11 @@ jobs:
     needs: [Build, DockerImage-frontend]
     container: golang:latest
     steps:
+      - name: Download code
+        uses: actions/download-artifact@v2
+        with:
+          name: code
+          path: .
       - uses: actions/checkout@v2
       - name: run test
         run: cd ./ci && chmod +x frontend-test && ./frontend-test.sh
@@ -107,6 +112,11 @@ jobs:
     needs: [Build, DockerImage-backend]
     container: golang:latest
     steps:
+      - name: Download code
+        uses: actions/download-artifact@v2
+        with:
+          name: code
+          path: .
       - uses: actions/checkout@v2
       - name: Test Frontend Script
         run: cd ./ci && chmod backend-test.sh && ./backend-test.sh
