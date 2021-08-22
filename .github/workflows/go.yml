@@ -22,12 +22,10 @@ jobs:
           path: ./frontend
   Test-frontend:
     runs-on: ubuntu-latest
-    container: gradle:6-jdk11
     steps:
       - name: Test Frontend
-        run: |
-          chmod +x ${GITHUB_WORKSPACE}/scripts/test-frontend.sh
-          ${GITHUB_WORKSPACE}/scripts/test-frontend.sh
+        run: bash scripts/test-frontend.sh
+
   DockerImage-frontend:
     runs-on: ubuntu-latest
     needs: [Build, Tests]
