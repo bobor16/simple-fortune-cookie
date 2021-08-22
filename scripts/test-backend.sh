@@ -1,5 +1,5 @@
 #!/bin/bash
-address=127.0.0.1:9000
+address=35.190.207.162:8080
 echo 'Running frontend test..'
 for i in {1..10}
 do
