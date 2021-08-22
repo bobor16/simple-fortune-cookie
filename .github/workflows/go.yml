@@ -93,4 +93,4 @@ jobs:
           name: code
           path: .
       - name: run test
-        run: cd ci && chmod +x test.sh && ./test.sh
+        run: cd ./ci && chmod +x test.sh && ./test.sh
