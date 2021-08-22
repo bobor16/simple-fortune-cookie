@@ -40,7 +40,7 @@ jobs:
         with:
           push: true
           context: .
-          tags: ${{ env.docker_username }}/simple-fortune-cookie-frontend:${{ github.sha }}
+          tags: ${{ env.docker_username }}/simple-fortune-cookie-frontend
 
 # test
   DockerImage-backend:
@@ -62,8 +62,8 @@ jobs:
         with:
           push: true
           context: .
-          tags: ${{ env.docker_username }}/simple-fortune-cookie-backend:${{ github.sha }}
-  Tests:
+          tags: ${{ env.docker_username }}/simple-fortune-cookie-backend
+  Test:
     runs-on: ubuntu-latest
     needs: Clone-down
     container: gradle:6-jdk11
