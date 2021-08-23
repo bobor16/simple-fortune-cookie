@@ -39,6 +39,19 @@ jobs:
         run: go test
         working-directory: ./frontend
 
+  Unit-test:
+    runs-on: self-hosted
+    needs: [Clone-down]
+    container: golang:latest
+    steps:
+      - name: Download code
+        uses: actions/download-artifact@v2
+        with:
+          name: code
+          path: .
+      - name: run test
+        run: cd ./ci && chmod +x test.sh && ./test.sh
+
   DockerImage-frontend:
     runs-on: ubuntu-latest
     needs: [Build, Unit-test]
@@ -82,17 +95,6 @@ jobs:
           context: .
           tags: ${{ env.docker_username }}/simple-fortune-cookie-backend
 
-#  Tests:
-#    runs-on: ubuntu-latest
-#    needs: Clone-down
-#    container: golang:latest
-#    steps:
-#      - name: Download code
-#        uses: actions/download-artifact@v2
-#        with:
-#          name: code
-#          path: ./frontend && ./backend
-
   Test-frontend:
     runs-on: self-hosted
     needs: [DockerImage-frontend]
@@ -122,15 +124,3 @@ jobs:
         run: bash scripts/test-backend.sh
 
 
-  Unit-test:
-    runs-on: self-hosted
-    needs: [Clone-down, Build]
-    container: golang:latest
-    steps:
-      - name: Download code
-        uses: actions/download-artifact@v2
-        with:
-          name: code
-          path: .
-      - name: run test
-        run: cd ./ci && chmod +x test.sh && ./test.sh
