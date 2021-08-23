@@ -1,6 +1,6 @@
 #!/bin/bash
-address=35.190.207.162:8080
-echo 'Running frontend test..'
+address=35.190.207.162:9000
+echo 'Running backend test..'
 for i in {1..10}
 do
     echo 'Attempting to connect..'
