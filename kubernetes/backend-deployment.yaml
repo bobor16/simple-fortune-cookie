@@ -1,21 +1,29 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: backend-deployment
   labels:
     app: backend-deployment
-  name: backend-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
+      name: backend-deployment
       app: backend-deployment
   template:
     metadata:
       labels:
+        name: backend-deployment
         app: backend-deployment
     spec:
       containers:
-      - image: bobor16/simple-fortune-cookie-backend:latest
-        name: simple-fortune-cookie-backend
+      - env:
+        - name: REDIS_DNS
+          value: database-service
+        image: bobor16/simple-fortune-cookie-backend:latest
         imagePullPolicy: Always
+        name: simple-fortune-cookie-backend
+        ports:
+            - containerPort: 9000
         resources: {}
+status: {}
