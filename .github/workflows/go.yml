@@ -41,7 +41,7 @@ jobs:
 
   DockerImage-frontend:
     runs-on: ubuntu-latest
-    needs: [Build, Tests]
+    needs: [Build]
     steps:
       - name: Download artifact code
         uses: actions/download-artifact@v2
@@ -60,9 +60,10 @@ jobs:
           context: .
           tags: ${{ env.docker_username }}/simple-fortune-cookie-frontend
 
+  
   DockerImage-backend:
     runs-on: ubuntu-latest
-    needs: [Build, Tests]
+    needs: [Build]
     steps:
       - name: Download artifact code
         uses: actions/download-artifact@v2
@@ -80,6 +81,17 @@ jobs:
           push: true
           context: .
           tags: ${{ env.docker_username }}/simple-fortune-cookie-backend
+
+#  Tests:
+#    runs-on: ubuntu-latest
+#    needs: Clone-down
+#    container: golang:latest
+#    steps:
+#      - name: Download code
+#        uses: actions/download-artifact@v2
+#        with:
+#          name: code
+#          path: ./frontend && ./backend
 
   Test-frontend:
     runs-on: self-hosted
@@ -108,6 +120,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: run test
         run: bash scripts/test-backend.sh
+
 
   Test-runner:
     runs-on: self-hosted
