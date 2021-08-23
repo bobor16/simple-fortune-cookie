@@ -23,4 +23,3 @@ services:
     environment:
       BACKEND_DNS: "backend"
       BACKEND_PORT: "9000"
-    
