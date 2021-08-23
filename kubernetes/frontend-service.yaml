@@ -11,6 +11,7 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
+
     name: frontend-deployment
     app: frontend-deployment
   type: NodePort
