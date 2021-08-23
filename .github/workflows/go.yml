@@ -95,10 +95,12 @@ jobs:
           context: .
           tags: ${{ env.docker_username }}/simple-fortune-cookie-backend
 
+
   Test-frontend:
     runs-on: self-hosted
     needs: [DockerImage-frontend]
     container: golang:latest
+
     steps:
       - name: Download code
         uses: actions/download-artifact@v2
@@ -122,5 +124,3 @@ jobs:
       - uses: actions/checkout@v2
       - name: run test
         run: bash scripts/test-backend.sh
-
-
