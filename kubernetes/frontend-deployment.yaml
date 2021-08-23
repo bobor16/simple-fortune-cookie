@@ -1,21 +1,29 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: frontend-deployment
   labels:
     app: frontend-deployment
-  name: frontend-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
+      name: frontend-deployment
       app: frontend-deployment
   template:
     metadata:
       labels:
+        name: frontend-deployment
         app: frontend-deployment
     spec:
       containers:
-      - image: bobor16/simple-fortune-cookie-frontend:latest
-        name: simple-fortune-cookie-frontend
+      - env:
+        - name: BACKEND_DNS
+          value: backend-service
+        image: bobor16/simple-fortune-cookie-frontend:latest
         imagePullPolicy: Always
+        name: simple-fortune-cookie-frontend
+        ports:
+            - containerPort: 8080
         resources: {}
+status: {}
