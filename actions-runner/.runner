@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 23,
+  "agentName": "squakwee",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/kYIhEau89cHjWJsUfetDdyHhXKn3W5poseYa4b3P0ZM6cyXiP8",
+  "gitHubUrl": "https://github.com/bobor16/simple-fortune-cookie",
+  "workFolder": "_work"
+}
