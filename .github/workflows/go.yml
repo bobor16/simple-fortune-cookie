@@ -63,6 +63,7 @@ jobs:
           push: true
           context: .
           tags: ${{ env.docker_username }}/simple-fortune-cookie-backend
+
   Tests:
     runs-on: ubuntu-latest
     needs: Clone-down
